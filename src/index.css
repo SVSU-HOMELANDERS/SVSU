@@ -15,7 +15,7 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; background: #0f1117; }
 button, input, textarea { font: inherit; }
-::selection { background: rgba(232, 56, 79, .35); color: white; }
+::selection { background: rgba(30, 58, 138, .55); color: white; }
 
 @layer utilities {
   .font-mono-display { font-family: 'Space Mono', monospace; }
@@ -24,7 +24,29 @@ button, input, textarea { font: inherit; }
     background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
     background-size: 42px 42px;
   }
-  .red-glow { box-shadow: 0 0 42px rgba(232, 56, 79, .22); }
+  .red-glow { box-shadow: 0 0 42px rgba(30, 58, 138, .28); }
   .red-glow-hover { transition: box-shadow .3s ease, border-color .3s ease, transform .3s ease; }
-  .red-glow-hover:hover { box-shadow: 0 0 34px rgba(232, 56, 79, .2); border-color: rgba(232, 56, 79, .7); transform: translateY(-4px); }
+  .red-glow-hover:hover { box-shadow: 0 0 34px rgba(30, 58, 138, .28); border-color: rgba(59, 130, 246, .7); transform: translateY(-4px); }
 }
+
+/* Navy accent palette for the HOMELANDERS identity. */
+[class*="text-[#e8384f]"] { color: #3b82f6 !important; }
+[class*="text-[#ff7788]"] { color: #93c5fd !important; }
+[class*="bg-[#e8384f]"] { background-color: #1e3a8a !important; }
+[class*="border-[#e8384f]"] { border-color: #3b82f6 !important; }
+[class*="hover:bg-[#e8384f]"]:hover { background-color: #1e40af !important; }
+[class*="hover:bg-[#f34e63]"]:hover { background-color: #2563eb !important; }
+[class*="hover:border-[#e8384f]"]:hover { border-color: #3b82f6 !important; }
+[class*="focus:border-[#e8384f]"]:focus { border-color: #3b82f6 !important; }
+[class*="shadow-[0_0_24px_rgba(232,56,79,.35)]"],
+[class*="shadow-[0_0_32px_rgba(232,56,79,.4)]"] { box-shadow: 0 0 32px rgba(30, 58, 138, .45) !important; }
+[class*="bg-[#e8384f]/[.07]"] { background-color: rgba(30, 58, 138, .07) !important; }
+[class*="bg-[#e8384f]/[.06]"] { background-color: rgba(30, 58, 138, .06) !important; }
+[class*="bg-[#e8384f]/10"] { background-color: rgba(30, 58, 138, .1) !important; }
+[class*="bg-[#e8384f]/15"] { background-color: rgba(30, 58, 138, .15) !important; }
+[class*="bg-[#e8384f]/25"] { background-color: rgba(30, 58, 138, .25) !important; }
+[class*="border-[#e8384f]/25"] { border-color: rgba(59, 130, 246, .25) !important; }
+[class*="border-[#e8384f]/30"] { border-color: rgba(59, 130, 246, .3) !important; }
+[class*="border-[#e8384f]/40"] { border-color: rgba(59, 130, 246, .4) !important; }
+[class*="border-[#e8384f]/50"] { border-color: rgba(59, 130, 246, .5) !important; }
+[class*="border-[#e8384f]/70"] { border-color: rgba(59, 130, 246, .7) !important; }
